@@ -1,9 +1,9 @@
 import NatsEvent from './NatsEvent';
 
 class CustomerUpdatedEvent extends NatsEvent {
-  constructor(content?: String) {
+  constructor(name: String) {
     super();
-    this.name = content;
+    this.name = name;
   }
 
   public name: String;
