@@ -6,14 +6,8 @@ This repo is a test and should be seen as a foundation for discussion to have ty
 ### Install TypeScript
 ```npm install -g typescript```
 
-### Build the sample app
-```bash
-npm install
-tsc 
-```
-
-### Run NATS in a Docker container
-```docker run -d -p "4222:4222" --name nats-main nats```
+### Install docker-compose
+[Install it](https://docs.docker.com/compose/install/) according to the official docs.
 
 ### Run the sample app
 ```npm run watch```
