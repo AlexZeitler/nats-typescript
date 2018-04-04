@@ -1,0 +1,11 @@
+version: "3"
+services:
+  nats:
+    image: nats:1.1.0
+  pubsub:
+    build: .
+    command: npm run debug
+    volumes:
+          - ./build:/server/build
+    ports:
+      - "9229:5858"

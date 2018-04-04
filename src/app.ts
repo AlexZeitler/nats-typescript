@@ -1,7 +1,7 @@
 import * as NATS from 'nats';
 import CustomerUpdatedEvent from './CustomerUpdatedEvent';
 
-const nats = NATS.connect('nats://localhost:4222');
+const nats = NATS.connect('nats://nats:4222');
 
 // Simple Publisher
 nats.publish('customer.updated', new CustomerUpdatedEvent('PDMLab').toString());
