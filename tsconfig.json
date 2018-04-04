@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "outDir": "build",
-    "sourceMap": true
+    "inlineSources": true,
+    "inlineSourceMap": true
   },
   "include": [
     "src/**/*"

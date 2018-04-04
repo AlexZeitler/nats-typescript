@@ -4,7 +4,10 @@ import CustomerUpdatedEvent from './CustomerUpdatedEvent';
 const nats = NATS.connect('nats://nats:4222');
 
 // Simple Publisher
-nats.publish('customer.updated', new CustomerUpdatedEvent('PDMLab').toString());
+
+setTimeout(() => {
+  nats.publish('customer.updated', new CustomerUpdatedEvent('PDMLab').toString());
+}, 10000);
 
 // Simple Subscriber
 nats.subscribe('customer.updated', msg => {
