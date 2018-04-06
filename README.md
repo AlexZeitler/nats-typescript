@@ -2,6 +2,9 @@
 
 This repo is a test and should be seen as a foundation for discussion to have typed Events/Messages for [NATS](https://nats.io) in Node.js using TypeScript.
 
+## Disclaimer
+This code has been tested on Linux and macOS but not on Windows and it is very likely that it won't work due to Windows backslash vs. *nix forward slashes. 
+
 ## Running the code
 ### Install TypeScript
 ```npm install -g typescript```
